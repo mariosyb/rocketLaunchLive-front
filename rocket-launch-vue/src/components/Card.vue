@@ -87,7 +87,7 @@ export default {
     items: [
       {
         color: "blue darken-3",
-        src: require('../assets/telescope.svg'),
+        src: require('../assets/rocket3.svg'),
         mission_name: "Mission name",
         date: " - Feb 14",
         vehicle_name: "Vehicle name",
@@ -97,19 +97,19 @@ export default {
       },
       {
         color: "deep-purple darken-3",
-        src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
+        src: require('../assets/rocket4.svg'),
         title: "Halcyon Days",
         artist: "Ellie Goulding",
       },
       {
         color: "blue darken-3",
-        src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
+        src: require('../assets/rocket2.svg'),
         title: "Halcyon Days",
         artist: "Ellie Goulding",
       },
       {
         color: "deep-purple darken-3",
-        src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
+        src: require('../assets/rocket1.svg'),
         title: "Halcyon Days",
         artist: "Ellie Goulding",
       },
