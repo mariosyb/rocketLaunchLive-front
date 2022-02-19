@@ -1,17 +1,10 @@
 <template>
   <v-card max-width="800" class="mx-auto">
-    <v-system-bar color="pink darken-2" dark>
+    <v-system-bar color="black" dark>
       <v-spacer></v-spacer>
-
-      <v-icon>mdi-window-minimize</v-icon>
-
-      <v-icon>mdi-window-maximize</v-icon>
-
-      <v-icon>mdi-close</v-icon>
     </v-system-bar>
 
-    <v-app-bar dark color="pink">
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-app-bar dark color="grey darken-3">
 
       <v-toolbar-title>Next Rocket Launches Schedule</v-toolbar-title>
 
@@ -21,7 +14,7 @@
     <v-container>
       <v-row dense>
         <v-col cols="12">
-          <v-card color="#385F73" dark>
+          <v-card color="grey darken-4" dark>
             <v-card-title class="text-h5"> Next Lauch </v-card-title>
 
             <v-card-subtitle class="text-h6">Mission Name - Feb 14</v-card-subtitle>
@@ -36,8 +29,6 @@
               Launch description will be here, solo del mas prixmo. Launch description will be here, solo del mas prixmo.
               Launch description will be here, solo del mas prixmo. Launch description will be here, solo del mas prixmo.
             </v-card-subtitle>
-
-            
 
             <v-card-actions>
               <v-btn text> Go to live streaming o embebido ? </v-btn>
@@ -95,7 +86,7 @@ export default {
   data: () => ({
     items: [
       {
-        color: "#1F7087",
+        color: "blue darken-3",
         src: require('../assets/telescope.svg'),
         mission_name: "Mission name",
         date: " - Feb 14",
@@ -105,19 +96,19 @@ export default {
         counrty: "country",
       },
       {
-        color: "#952175",
+        color: "deep-purple darken-3",
         src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
         title: "Halcyon Days",
         artist: "Ellie Goulding",
       },
       {
-        color: "#952175",
+        color: "blue darken-3",
         src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
         title: "Halcyon Days",
         artist: "Ellie Goulding",
       },
       {
-        color: "#952175",
+        color: "deep-purple darken-3",
         src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
         title: "Halcyon Days",
         artist: "Ellie Goulding",
