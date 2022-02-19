@@ -1,10 +1,11 @@
 <template>
-  <v-card max-width="800" class="mx-auto">
+<div id="app" v-bind:style="{ backgroundColor: color}">
+  <v-card max-width="800" class="mx-auto" v-bind:style="{ backgroundColor: color2}">
     <v-system-bar color="black" dark>
       <v-spacer></v-spacer>
     </v-system-bar>
 
-    <v-app-bar dark color="grey darken-3">
+    <v-app-bar dark color="grey darken-4">
 
       <v-toolbar-title>Next Rocket Launches Schedule</v-toolbar-title>
 
@@ -14,24 +15,17 @@
     <v-container>
       <v-row dense>
         <v-col cols="12">
-          <v-card color="grey darken-4" dark>
+          <v-card color="blue-grey darken-4" dark>
             <v-card-title class="text-h5"> Next Lauch </v-card-title>
 
             <v-card-subtitle class="text-h6">Mission Name - Feb 14</v-card-subtitle>
             <v-card-text v-text="nextLaunch.vehicle_name + nextLaunch.space_agency"/>
             <v-card-text v-text="nextLaunch.launch_pad_name + nextLaunch.counrty"/>
 
-            <v-card-subtitle>
-              Launch description will be here, solo del mas prixmo. Launch description will be here, solo del mas prixmo.
-              Launch description will be here, solo del mas prixmo. Launch description will be here, solo del mas prixmo.
-              Launch description will be here, solo del mas prixmo.
-              Launch description will be here, solo del mas prixmo. Launch description will be here, solo del mas prixmo.
-              Launch description will be here, solo del mas prixmo. Launch description will be here, solo del mas prixmo.
-              Launch description will be here, solo del mas prixmo. Launch description will be here, solo del mas prixmo.
-            </v-card-subtitle>
+            <v-card-subtitle v-text="nextLaunch.description"/>
 
             <v-card-actions>
-              <v-btn text> Go to live streaming o embebido ? </v-btn>
+              <v-btn elevation="5" text>Go to live stream</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -49,24 +43,6 @@
                 <v-card-text v-text="item.space_agency"></v-card-text>
                 <v-card-text v-text="item.launch_pad_name"></v-card-text>
                 <v-card-text v-text="item.counrty"></v-card-text>
-
-                <!--<v-card-actions>
-                  <v-btn
-                    v-if="item.artist === 'Ellie Goulding'"
-                    class="ml-2 mt-3"
-                    fab
-                    icon
-                    height="40px"
-                    right
-                    width="40px"
-                  >
-                    <v-icon>mdi-play</v-icon>
-                  </v-btn>
-
-                  <v-btn v-else class="ml-2 mt-5" outlined rounded small>
-                    START RADIO
-                  </v-btn>
-                </v-card-actions>-->
               </div>
 
               <v-avatar class="ma-8" size="200" tile>
@@ -78,6 +54,7 @@
       </v-row>
     </v-container>
   </v-card>
+</div>
 </template>
 
 
@@ -121,7 +98,10 @@ export default {
         space_agency: " - Agency name",
         launch_pad_name: "Pad name",
         counrty: " - country",
-    }
+        description: "Launch description will be here, solo del mas prixmo. Launch description will be here, solo del mas prixmo Launch description will be here, solo del mas prixmo."
+    },
+    color: '#EEEEEE',
+    color2: "#C5CAE9"
   }),
 };
 </script>
